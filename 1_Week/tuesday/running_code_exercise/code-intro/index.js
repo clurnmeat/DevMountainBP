@@ -57,7 +57,7 @@ var speed = 25;
 // CODE HERE
 speed = speed + 475;
 
-console.log(speed);
+console.log("new speed: ", speed);
 
 
 

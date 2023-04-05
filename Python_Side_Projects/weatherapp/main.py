@@ -17,7 +17,7 @@ photo = tk.PhotoImage(
 screen.iconphoto(False, photo)
 
 # Weather Info
-city_name = tk.Text(screen)
+city_name = tk.Text(screen, height=1, font=("Arial", 25))
 city_name.pack()
 
 
@@ -29,6 +29,9 @@ params = {
 
 
 location = requests.get(url=GEOLOCATOR, params=params).json()
-
+with open(location) as file:
+    lat = file["lat"]
+    lon = file["lon"]
+    print(lat, lon)
 
 screen.mainloop()

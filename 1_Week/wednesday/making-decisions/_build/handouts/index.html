@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Making Decisions Lab | Devmountain Foundations</title>
+
+      <link
+        href="_static/pygments.css"
+        rel="stylesheet"
+        type="text/css"
+      />
+      <link href="_static/devmountain.css" rel="stylesheet" type="text/css" />
+          <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+          <link rel="stylesheet" type="text/css" href="_static/devmountain.css" />
+          <link rel="stylesheet" type="text/css" href="_static/plot_directive.css" />
+          <link rel="stylesheet" type="text/css" href="_static/graphviz.css" />
+
+      <script src="_static/pdfobject.min.js"></script>
+      
+  </head>
+  <body>
+      <div id="handouts-container">
+        <header id="page-header">
+            <p id="project-title">Devmountain Foundations</p>
+            <p id="page-title">Making Decisions Lab</p>
+              <p id="backlink">
+                <a href="/"> &laquo; Back to Homepage </a>
+              </p>
+        </header>
+
+        <nav id="page-toc"><ul>
+<li><a class="reference internal" href="#">Making Decisions Lab</a><ul>
+<li><a class="reference internal" href="#instructions">Instructions</a></li>
+<li><a class="reference internal" href="#backing-up-code-to-github">Backing Up Code to GitHub</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+
+        <main id="page-content">
+            <section class="section" id="making-decisions-lab">
+<h1>Making Decisions Lab</h1>
+<section class="section" id="instructions">
+<h2>Instructions</h2>
+<p>To start, download the exercise content for today.</p>
+<p>Once you have done that, use the command line to navigate into the folder and follow the steps from last class to initialize a git repository. As you move through todays lab (and especially once you have completed it), make sure to commit your changes.</p>
+<p>Open the lab.js file, and attempt as many problems as you can.</p>
+<p>The goal is to get through all of the starting questions, and then as many of the intermediate and advanced questions as possible. If you get through the intermediate questions, challenge yourself with the advanced questions. The advanced questions will cover topics not taught in class. This is intentional. Use resources online to help you figure out the solutions.</p>
+<p><strong>Do not move on to the next section until you have completed the starting and intermediate questions.</strong></p>
+</section>
+<section class="section" id="backing-up-code-to-github">
+<h2>Backing Up Code to GitHub</h2>
+<p>Git is great and all, but your files still just exist on your computer which is
+nice… as long as your computer works. Enter <a class="reference external" href="https://github.com" target="_blank">GitHub</a>!</p>
+<p>GitHub is a company that gives developers a place to upload their code, showcase
+projects in a portfolio, and enable collaboration between developers by
+taking advantage of Git to sync code between different machines. You don’t need
+to have a GitHub account to use Git but a GitHub account <em>will</em> allow you to
+make your code and yourself more visible in the software engineering community.</p>
+<div class="admonition warning">
+<p class="admonition-title">Do you have a GitHub account?</p>
+<div class="admonition-body docutils container">
+<p>If you have not yet created a GitHub account, <a class="reference external" href="https://github.com/join?source=header-home" target="_blank">click here to create one
+now</a>.</p>
+</div>
+</div>
+<p>Every time you start a new software project, you should upload it to GitHub.
+Let’s start by uploading your code from this exercise. To get started, log into
+GitHub and click the green <cite>New</cite> button to create a new GitHub repository (see
+the screenshot below). You’ll want to create a new GitHub repository for every
+Git repository you want to upload.</p>
+<img alt="_images/github1.png" src="_images/github1.png" style="width: 80%;" />
+<p>This will take you to a form to create a GitHub repository:</p>
+<img alt="_images/gitHubNewRepo.png" src="_images/gitHubNewRepo.png" style="width: 80%;" />
+<p>Here’s how to fill out the form:</p>
+<ul class="simple">
+<li><p>Under <cite>Repository Name</cite>, enter <code class="docutils literal notranslate"><span class="pre">making-decisions</span></code> (or whatever you’d like call
+it, but note this affects the URL)</p></li>
+<li><p>The description is optional</p></li>
+<li><p>Leave it set to <cite>Public</cite> — we want your future employers to be able to
+check out your code</p></li>
+<li><p>Leave <cite>Initialize this repository with a README</cite> unchecked — you’ve
+already initialized the repository on your local machine with <cite>git init</cite></p></li>
+</ul>
+<p>Click <cite>Create Repository</cite> to create a repository with the above settings. You’ve
+just created a <cite>remote repository</cite> (“remote repo” for short or just “remote”).
+It’s a remote repository (think like a <em>remote island</em>) because it exists far
+away from your computer. The repository on your computer is a <cite>local repository</cite> (or “local repo”).</p>
+<div class="admonition note">
+<p class="admonition-title">Industry terms</p>
+<div class="admonition-body docutils container">
+<p>“Remote repository” is a mouthful, so most of the time people use the term
+“remote repo” or, even more informally, “remote” instead. For example:</p>
+<ul class="simple">
+<li><p>Did you check what’s in the remote?</p>
+<ul>
+<li><p>Translation: Did you check to see if the code you’re looking for is in
+GitHub/the remote repository?</p></li>
+</ul>
+</li>
+<li><p>I can’t fetch from the remote repo</p>
+<ul>
+<li><p>Translation: I can’t get the latest code from the GitHub repository.</p></li>
+</ul>
+</li>
+</ul>
+<p>Similarly, “local repository” is shortened to “local repo” and sometimes it’s
+shortened to “local” but only in certain contexts. For example:</p>
+<ul class="simple">
+<li><p>The updates are only local right now</p>
+<ul>
+<li><p>Translation: My latest code exists locally, on my machine (implying that
+I haven’t uploaded it to the remote repo yet)</p></li>
+</ul>
+</li>
+<li><p>I have a local repo with the files you’re looking for</p>
+<ul>
+<li><p>Translation: I have a copy of the repository on my computer that contains
+some files that probably went missing, somehow</p></li>
+<li><p>In this case, you wouldn’t say, “I have a local with the files you’re
+looking for” — that just sounds weird!</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<p>Now you’ll need to connect your remote repository to your local repository. To
+do this, you’ll need the address of the remote repo. From your remote
+repository’s homepage, locate the <cite>Quick Setup</cite> box and copy the HTTPS URL
+of your remote repo:</p>
+<img alt="_images/githubClone.png" src="_images/githubClone.png" style="width: 90%;" />
+<p>With your remote’s address in hand, head over to your terminal — next, you’ll
+tell your local repo that it should track your GitHub repo with the Git command,
+<cite>git remote add</cite>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Make sure you’re in the right place</p>
+<div class="admonition-body docutils container">
+<p>Make sure you’re in the directory of your Git repo before you execute any of the Git commands below.</p>
+</div>
+</div>
+<p><cite>git remote add</cite> takes in two arguments:</p>
+<ul class="simple">
+<li><p>The name you want to use to refer to your remote</p>
+<ul>
+<li><p>The name can be anything you want but <code class="docutils literal notranslate"><span class="pre">origin</span></code> is the name everyone uses
+by default</p></li>
+<li><p>This allows you to connect your local repo with <em>multiple</em> remote repos</p></li>
+</ul>
+</li>
+<li><p>The remote’s address</p></li>
+</ul>
+<p>Putting all of the above together, here’s the command to connect your GitHub
+repo and local repo together:</p>
+<pre class="console literal-block">$ <span class="cmd">git remote add origin REPLACE_THIS_WITH_YOUR_URL</span></pre>
+<p>When we add a remote, much like when we do any other configuration, it
+only exists for that repository. Outside of the folder our repository is
+in, none of these settings exist.</p>
+<p>Now we have a remote — this is like a portal that goes to whatever URL
+we point at. So, now that we’ve established a portal link, what do we do
+with it? Same thing you’d probably do if you actually opened a portal to
+the server room at GitHub. Push things through it and see what happens.</p>
+<pre class="console literal-block">$ <span class="cmd">git push REPLACE_WITH_REMOTE_NAME main</span></pre>
+<p>Replace <cite>[remote name]</cite> (no square brackets) with the name you used when
+you added the remote (it’s probably <code class="docutils literal notranslate"><span class="pre">origin</span></code>). You might wonder about
+what <code class="docutils literal notranslate"><span class="pre">main</span></code> is — that’s the name of the branch. For now, we’ll just
+have one branch, so we’ll always type <code class="docutils literal notranslate"><span class="pre">main</span></code> there. In the <cite>Further
+Study</cite> section, there’s some information about branching.</p>
+<p>Once you’ve <cite>git push</cite>-ed, Git will ask you for a username. This is your
+GitHub username. Then it will ask for your password. (When you type a password,
+you may be used to seeing asterisks (<cite>*</cite>) appear; in this case, nothing will.
+Don’t worry! It’s still working. This is just another way of hiding your
+password.)</p>
+<p>After this, head over to your GitHub profile. You should see that your new
+repo has been created, and that any files you’ve added have been
+pushed to the server. Pushing code to GitHub is the simplest way to back up
+your work to the cloud, share code between teams, and make sure you remember
+what you did and when you did it (complete with notes to yourself!).</p>
+<p><strong>Congratulations on pushing your first exercise!</strong></p>
+</section>
+</section>
+
+        </main>
+
+        <footer id="page-footer">
+            <p>&copy; 2022 Devmountain</p>
+        </footer>
+      </div>
+
+      <script src="_static/main.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+  </body>
+</html>

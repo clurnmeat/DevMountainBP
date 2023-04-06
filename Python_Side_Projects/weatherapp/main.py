@@ -11,7 +11,7 @@ APIKEY = "eb386d51eb16c1f5ca4e882a58bee4ca"
 screen = tk.Tk()
 screen.geometry("300x400")
 screen.title("Weather App")
-# screen.resizable(False, False)
+screen.resizable(False, False)
 photo = tk.PhotoImage(
     file="Python_Side_Projects/weatherapp/7607342.png")
 screen.iconphoto(False, photo)
@@ -40,10 +40,11 @@ def get_weather():
         "units": "imperial"
 
     }
+    # Weather Label
     response = requests.get(API, params=params2).json()
     weather = response["main"]["temp"]
     weather_num = tk.Label(text=weather, font=("Arial", 45))
-    weather_num.grid(row=2, column=0, padx=25, pady=50)
+    weather_num.grid(row=2, column=0, padx=65, pady=125, columnspan=4)
     return
 
 
@@ -52,10 +53,8 @@ searchbutton = tk.Button(text="Search", height=2, command=get_weather)
 searchbutton.grid(row=0, column=1)
 
 # Search Bar
-searchbar = tk.Text(height=1, font=("Arial", 25), width=12)
-searchbar.grid(row=0, column=0,)
-
-# Weather Label
+searchbar = tk.Text(height=1, font=("Arial", 25), width=12, )
+searchbar.grid(row=0, column=0, )
 
 
 screen.mainloop()

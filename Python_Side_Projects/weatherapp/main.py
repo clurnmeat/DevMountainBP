@@ -13,7 +13,7 @@ screen.geometry("300x400")
 screen.title("Weather App")
 screen.resizable(False, False)
 photo = tk.PhotoImage(
-    file="Python_Side_Projects/weatherapp/7607342.png")
+    file="weatherapp/7607342.png")
 screen.iconphoto(False, photo)
 # Weather Info
 
@@ -58,3 +58,4 @@ searchbar.grid(row=0, column=0, )
 
 
 screen.mainloop()
+# TODO: Add design, maybe cool background, and graphic showing rain and sun and cloud?

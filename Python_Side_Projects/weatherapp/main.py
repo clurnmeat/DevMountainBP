@@ -67,7 +67,7 @@ searchbutton.grid(row=0, column=1)
 
 # Search Bar
 searchbar = tk.Text(height=1, font=("Arial", 28), width=12, )
-searchbar.config(yscrollcommand=)
+# searchbar.config(yscrollcommand=)
 searchbar.grid(row=0, column=0, )
 
 

@@ -49,22 +49,14 @@ const pinkPrice = 0.55;
 
 // CODE HERE
 let totalAcres = 0;
-let i = 0;
-switch (i < 8) {
-  case fujiAcres[i]:
-    totalAcres += fujiAcres[i];
-    i++;
-    break;
-  case galaAcres[i]:
-    totalAcres += galaAcres[i];
-    i++;
-    break;
-  case pinkAcres[i]:
-    totalAcres += pinkAcres[i];
-    i++;
-    break;
+
+for (let i = 0; i < 7; i++) {
+  totalAcres += fujiAcres[i];
+  totalAcres += galaAcres[i];
+  totalAcres += pinkAcres[i];
 }
 console.log(totalAcres);
+
 // PROBLEM 2
 
 /*
@@ -78,7 +70,9 @@ console.log(totalAcres);
 */
 
 // CODE HERE
-
+let averageDailyAcres =
+  totalAcres / (fujiAcres.length + galaAcres.length + pinkAcres.length);
+console.log(averageDailyAcres);
 // PROBLEM 3
 
 /*
@@ -112,7 +106,11 @@ let acresLeft = 174;
 let days = 0;
 
 // CODE HERE
-
+while (acresLeft > 0) {
+  days++;
+  acresLeft -= averageDailyAcres;
+}
+console.log(days);
 // PROBLEM 4
 
 /*
@@ -138,10 +136,23 @@ let days = 0;
 */
 
 // CODE HERE
+let fuji = fujiAcres.slice();
+let gala = galaAcres.slice();
+let pink = pinkAcres.slice();
 
-// let fujiTons =
-// let galaTons =
-// let pinkTons =
+for (i = 0; i < 7; i++) {
+  fuji[i] *= 6.5;
+
+  gala[i] *= 6.5;
+
+  pink[i] *= 6.5;
+}
+
+let fujiTons = fuji;
+let galaTons = gala;
+let pinkTons = pink;
+
+console.log(fuji, gala, pink);
 
 // PROBLEM 5
 
@@ -160,11 +171,15 @@ let days = 0;
 */
 
 // CODE HERE
-
-// let fujiPounds =
-// let galaPounds =
-// let pinkPounds =
-
+for (let i = 0; i < 7; i++) {
+  fuji[i] *= 2000;
+  gala[i] *= 2000;
+  pink[i] *= 2000;
+}
+let fujiPounds = fuji;
+let galaPounds = gala;
+let pinkPounds = pink;
+console.log(fuji, gala, pink);
 // PROBLEM 6
 
 /*
@@ -182,11 +197,18 @@ let days = 0;
 */
 
 // CODE HERE
-
-// let fujiProfit =
-// let galaProfit =
-// let pinkProfit =
-
+for (let i = 0; i < 7; i++) {
+  fuji[i] *= fujiPrice;
+  gala[i] *= galaPrice;
+  pink[i] *= pinkPrice;
+  Math.round();
+  Math.round();
+  Math.round();
+}
+let fujiProfit = fuji;
+let galaProfit = gala;
+let pinkProfit = pink;
+console.log("profit: ", fujiProfit, galaProfit, pinkProfit);
 // PROBLEM 7
 
 /*
@@ -198,3 +220,9 @@ let days = 0;
 */
 
 // CODE HERE
+let totalProfit = 0;
+
+for (let i = 0; i < 7; i++) {
+  totalProfit += fuji[i] + gala[i] + pink[i];
+}
+console.log(totalProfit);

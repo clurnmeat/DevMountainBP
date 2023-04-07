@@ -42,7 +42,6 @@ def get_weather():
         "lon": location_info[1],
         "appid": APIKEY,
         "units": "imperial"
-
     }
     # Weather Label
     response = requests.get(API, params=params2).json()
@@ -50,6 +49,15 @@ def get_weather():
     weather_num = tk.Label(text=weather, font=("Arial", 45), relief="flat")
     weather_num.grid(row=2, column=0,
                      rowspan=4, pady=80, )
+    if int(weather) >= 60 <= 75:
+        cloudy_day = tk.LabelFrame(
+            image="Python_Side_Projects/weatherapp/Pictogrammers-Material-Weather-Weather-partly-cloudy.512.png", )
+        cloudy_day.grid(row=3, column=0, rowspan=3, )
+    # elif weather > 75:
+    #     sunny_day = tk.Label(image=, )
+    # else:
+    #     host_day = tk.Label(image=)
+
     return
 
 
@@ -59,6 +67,7 @@ searchbutton.grid(row=0, column=1)
 
 # Search Bar
 searchbar = tk.Text(height=1, font=("Arial", 28), width=12, )
+searchbar.config(yscrollcommand=)
 searchbar.grid(row=0, column=0, )
 
 

@@ -3,7 +3,7 @@
     with Jon being allowed to flee his fight with Jamie.
 */
 let backpack = [];
-let belt = []
+let belt = [];
 backpack.push(`sword`);
 backpack.push("torch");
 backpack.push("food");
@@ -12,17 +12,12 @@ backpack.push("shield");
 backpack.push("clorox");
 backpack.push("sweater");
 
-
 let sword = backpack.splice(0, 1);
-belt.push(sword[0])
+belt.push(sword[0]);
 
 backpack.push("furcoat");
 
-backpack.pop()
-
-
-
-
+backpack.pop();
 
 backpack.push("flint", "blanket", "knife", "toothbrush", "cellphone");
 
@@ -42,16 +37,15 @@ backpack.push("flint", "blanket", "knife", "toothbrush", "cellphone");
 //     console.log(backpack[i]);
 // }
 
-
 let guessMe = 54;
 
-while(guessMe < 100) {
-    if (guessMe % 4 === 0 || guessMe % 5 === 0) {
-        guessMe += 25
-    } else if (guessMe % 3 === 0) {
-        guessMe -= 27;
-    } else {
-        guessMe += 3
-    }
-    guessMe += 22
+while (guessMe < 100) {
+  if (guessMe % 4 === 0 || guessMe % 5 === 0) {
+    guessMe += 25;
+  } else if (guessMe % 3 === 0) {
+    guessMe -= 27;
+  } else {
+    guessMe += 3;
+  }
+  guessMe += 22;
 }

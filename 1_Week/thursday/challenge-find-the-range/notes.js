@@ -1,12 +1,12 @@
 function myArrayMax(arr) {
-    let len = arr.length;
-    let max = -Infinity;
-    while (len--) {
-        if(arr[len] > max) {
-            max = arr[len];
-        }
+  let len = arr.length;
+  let max = -Infinity;
+  while (len--) {
+    if (arr[len] > max) {
+      max = arr[len];
     }
-    return max;
+  }
+  return max;
 }
 
-console.log(myArrayMax(array))
+console.log(myArrayMax(array));

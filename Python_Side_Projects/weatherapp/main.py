@@ -13,11 +13,11 @@ screen.geometry("400x250")
 screen.title("Weather App")
 screen.resizable(False, False)
 background = ImageTk.PhotoImage(Image.open(
-    "Python_Side_Projects/weatherapp/th-920371034.png"))
+    "Python_Side_Projects/images/background.png"))
 image = tk.Label(screen, image=background)
 image.grid(row=5, column=0, rowspan=8, columnspan=8)
 appico = tk.PhotoImage(
-    file="Python_Side_Projects/weatherapp/7607342.png")
+    file="Python_Side_Projects/images/appico.png")
 screen.iconphoto(False, appico)
 # Weather Info
 
@@ -50,8 +50,8 @@ def get_weather():
     weather_num.grid(row=2, column=0,
                      rowspan=4, pady=80, )
     if int(weather) >= 60 <= 75:
-        cloudy_day = tk.LabelFrame(
-            image="Python_Side_Projects/weatherapp/Pictogrammers-Material-Weather-Weather-partly-cloudy.512.png", )
+        cloudy_day = tk.PhotoImage()(
+            image="Python_Side_Projects/images/cloudy-day.png", )
         cloudy_day.grid(row=3, column=0, rowspan=3, )
     # elif weather > 75:
     #     sunny_day = tk.Label(image=, )

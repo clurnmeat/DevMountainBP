@@ -280,15 +280,15 @@ let loser = "Glimmer";
 
 //CODE HERE
 
-const theEliminator = (con, los) => {
-  for (let i = 0; i < con.length; i++) {
-    if (con[i] === los) {
-      newList = con.splice(i, 1);
+function theEliminator(contestants, loser) {
+  for (let i = 0; i < contestants.length; i++) {
+    if (contestants[i] === loser) {
+      contestants.splice(i, 1);
+      i--;
     }
   }
-  return newList;
-};
-console.log(`answers;`, contestants, loser);
+}
+console.log(`answers;`, theEliminator(contestants, loser));
 ////////////////// PROBLEM 17 ////////////////////
 let sampleString = "Hi, my name is Kylo.";
 /*
@@ -386,14 +386,14 @@ function pond() {
   Given the functions and variables above, edit the arrays below to contain only the appropriate variable names (as strings).
 */
 
-//This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = [duck];
+// //This array should contain the variable names (as strings) accessible in the global scope.
+// let globalScope = [duck];
 
-//This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = [rubberDuck, sailorDuck, duck];
+// //This array should contain the variable names (as strings) accessible in the bathroom function.
+// let bathroomScope = [rubberDuck, sailorDuck, duck];
 
-//This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = [sailorDuck, duck];
+// //This array should contain the variable names (as strings) accessible in the bathtub function.
+// let bathtubScope = [sailorDuck, duck];
 
-//This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = [realDuck, duck];
+// //This array should contain the variable names (as strings) accessible in the pond function.
+// let pondScope = [realDuck, duck];

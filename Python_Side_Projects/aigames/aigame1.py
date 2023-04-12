@@ -15,6 +15,7 @@ pygame.display.set_caption("Game Framework")
 
 # Define a clock to control the frame rate
 clock = pygame.time.Clock()
+frame_rate = 60
 
 # Define the main game loop
 
@@ -22,23 +23,18 @@ clock = pygame.time.Clock()
 def game_loop():
     # Game loop variables
     running = True
-
     # Main game loop
     while running:
         # Handle events
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
-
         # Clear the screen
         screen.fill(WHITE)
-
         # Update the screen
         pygame.display.flip()
-
         # Control the frame rate
-        clock.tick(60)
-
+        clock.tick(frame_rate)
     # Quit Pygame
     pygame.quit()
 

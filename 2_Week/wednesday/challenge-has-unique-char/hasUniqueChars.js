@@ -8,4 +8,4 @@ let hasUniqueChars = (wrd) => {
   return true;
 };
 
-console.log(hasUniqueChars("helo")); // Output: true
+console.log(hasUniqueChars("helo"));

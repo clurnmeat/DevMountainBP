@@ -161,3 +161,7 @@ const prices = riceFoods.reduce((a, b) => a + b.price, 0);
 console.log(prices);
 
 // // THE TOTAL
+
+let priceOfRice = foods.filter((items) => items.tags.includes("rice"));
+let fullprice = priceOfRice.reduce((items, curr) => items + curr.price, 0);
+console.log(fullprice);

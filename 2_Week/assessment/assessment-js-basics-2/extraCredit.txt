@@ -36,3 +36,5 @@ Northrop Grumman Stack:
 
     To improve odds of being hired:
         show an aptitude in linux based systems as well as a working knowledge of C/C++, Python, and Perl to show you have the willingness to learn.
+
+    source: view-source:https://www.northropgrumman.com/

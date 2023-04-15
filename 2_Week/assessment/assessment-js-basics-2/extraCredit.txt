@@ -1,0 +1,38 @@
+3 companies I am interested in:
+1. Target
+2. Boston Dynamics
+3. Northrop Grumman
+
+
+
+
+Target Stack:
+    Team Dependent:
+    Some examples are as follows:
+    Front-end:
+        Type-script, react, javascript, node
+    Back-end:
+        Python, Springboard
+
+    Job requires an ability to know at least more than one language. Focused heavily on the task at hand. Data focused due to Python. A javascript background is needed for front-end work.
+
+Boston Dynamics Stack:
+    Back-End:
+        Python, C++, with skills using OpenCV, Tensorflow, and/or PyTorch.
+    Front-end: -used for internal intranet as well as outward facing site.
+        javascript, node, typescript
+
+    Job requires an intrequete knowledge of back-end systems such as python with pytorch and opencv. Also looks to work with huge amounts of data in cv/json file format. Having skills in these areas would improve odds of employment significantly. Job related skills needed: 2+ years of professional expreince, back-end prefered.
+    source: view-source:https://www.bostondynamics.com/careers
+
+
+Northrop Grumman Stack:
+    Back-End: 
+        OOP model of C/C++, Python, Perl
+    Front-end: -used for internal intranet as well as outward facing site.
+        Javascript, Type-script, React
+    
+    Job requires top level security clearance, 4 years exp in lieu of degree, as well as an added 2 years for non entry level positions in lieu of Masters degree in comp science. A focus on OOP is outlined, as well as having skills in redHat Enterprise linux operating systems. Emphasis on C/C++ coding experience. 
+
+    To improve odds of being hired:
+        show an aptitude in linux based systems as well as a working knowledge of C/C++, Python, and Perl to show you have the willingness to learn.

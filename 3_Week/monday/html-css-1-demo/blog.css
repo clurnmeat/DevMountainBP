@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #413f32 ;
+    text-align: center;
+}
+
+#container{
+    background-color: white;
+    height: 900px;
+    width: 68%;
+    margin: auto;
+    margin-top: 30px;
+}
+h1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding-top: 50px;
+}
+.nav{
+    display: inline-block;
+    margin: 10px;
+}
+.sm_icon{
+    height: 20px;
+    width: 10px;
+    border: solid red 1px;
+    display: inline-block;
+    padding-right: 10px;
+    margin: auto;
+}
+
+#title > div{
+    margin-left: 700px;
+}
+
+#title h3, #title div{
+    display: inline-block;
+}

@@ -19,5 +19,5 @@ const hasMoreVowels = (word) => {
 };
 
 
-console.log(hasMoreVowels(`apple`))
+console.log(hasMoreVowels(`Aal`))
 

@@ -1,0 +1,72 @@
+* {
+    font-family: "Courier Prime", monospace;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    background-color: teal;
+    color: white;
+    padding: 20px;
+    margin: 0;
+}
+
+h1,
+p {
+    text-align: center;
+}
+
+p {
+    margin: 20px 200px;
+}
+
+h1 > span {
+    font-size: 16px;
+    margin: 0 50px;
+}
+
+div {
+    width: 700px;
+    margin: 0 auto;
+}
+
+div > p {
+    text-align: left;
+    width: 800px;
+    margin: 20px auto;
+}
+
+img {
+    height: 225px;
+    margin: 20px;
+    border: 5px solid black;
+}
+
+p > img {
+    float: left;
+}
+
+p > span {
+    font-weight: bold;
+}
+
+h3 {
+    padding: 20px;
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+div button {
+    padding: 10px 15px;
+    border: none;
+    background-color: coral;
+    color: white;
+    border-radius: 20px;
+}
+
+h4 button {
+    background-color: teal;
+}

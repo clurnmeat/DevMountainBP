@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+p{
+    color:orange;
+    background-color: black;
+}
+
+span {
+    background-color: red;
+}
+
+div img {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/15/Cat_August_2010-4.jpg');
+    height: 400px;
+    width: 100%;
+    padding: 50;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 10px;
+    display: inline-block;
+    border: 5px black solid;
+    padding: 10px;
+    
+}

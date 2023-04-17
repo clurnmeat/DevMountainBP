@@ -1,0 +1,16 @@
+.title{
+    text-align: center;
+}
+body {
+    background-image: url("https://staticdelivery.nexusmods.com/mods/100/images/50043/50043-1626303817-183941558.png") ;
+    
+}
+.content{
+    background-color: red;
+    width: auto;
+    height: 100vmax;
+    margin: auto;
+}
+.header3 {
+    color: red;
+}

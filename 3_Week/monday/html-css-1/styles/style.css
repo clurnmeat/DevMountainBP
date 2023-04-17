@@ -1,0 +1,42 @@
+body {
+    background-image: url("https://staticdelivery.nexusmods.com/mods/100/images/50043/50043-1626303817-183941558.png") ;
+    
+}
+
+.title {
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    color: red;
+    position: relative;
+    
+}
+
+.pages {
+    display: inline-block;
+    background-color: white;
+    color: red;
+    padding-inline-start: 40px;
+}
+
+.content {
+    background-color: white;
+    height: 2vh;
+    width:auto;
+    padding: 5px 10px;
+    margin: auto ;
+    text-align: center;
+    position: relative;
+    
+}
+
+a{
+    color: black;
+}
+
+.content2 {
+    background-image: url("https://averagevegandad.com/wp-content/uploads/2019/10/download-e1571237507351.png");
+    width: auto;
+    height: 50vmax;
+    margin: auto;
+}

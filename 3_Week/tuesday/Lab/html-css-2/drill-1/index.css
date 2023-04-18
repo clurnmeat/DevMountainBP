@@ -1,0 +1,15 @@
+.background {
+    background-color: gray;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+.forground {
+    background-color: white;
+}
+
+.footer {
+    background-color: black;
+}

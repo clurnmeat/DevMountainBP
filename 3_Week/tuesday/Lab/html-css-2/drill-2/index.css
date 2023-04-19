@@ -1,0 +1,63 @@
+.header{
+    border: 10px solid black;
+    height: 250px;
+    width: 99%;
+    box-sizing: content-box;
+    position: relative;
+    right: 0px;
+    top: 10px
+    
+}
+
+.verticalRectangle{
+    background-color: #8a2be2;
+    height: 5cm;
+    width: 1.55cm;
+    position: absolute;
+    bottom: 10px;
+    left: 7px;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+.rectangle{
+    background-color: #228b22;
+    height: 6cm;
+    width: 15cm;
+    position: absolute;
+    bottom: 10px;
+    left: 147px
+    
+}
+
+.circle{
+    background-color: #87ceeb;
+    height: 6cm;
+    width: 6cm;
+    border-radius: 100%;
+}
+
+.dottedBorder{
+    border: 10px dotted black;
+    height: 250px;
+    width: 99%;
+    box-sizing: content-box;
+    position: relative;
+    right: 0px;
+    top: 50px;
+}
+
+
+.fullBaige{
+    background-color: #fffacd;
+    border-radius: 25%;
+    height: 225px;
+    width: 95cm;
+    position: relative;
+
+}

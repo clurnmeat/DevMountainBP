@@ -1,15 +1,37 @@
 .background {
-    background-color: gray;
-    height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
+  background: #d8d8d8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
-.forground {
-    background-color: white;
+
+
+.foreground {
+  background-color: #efefef;
+  height: 100vh; 
+  position: relative;
+  top: 0px;
+  left: 200px;
+  width: 155vh; 
+ 
 }
 
 .footer {
-    background-color: black;
+    background-color: #222222;
+    height: 10vh;
+    position: relative;
+    top: 850px;
+    left: 0px;
+    width: 155vh;
 }
+
+.header {
+    background-color: #444444;
+    height: 15vh;
+    position: fixed;
+    width: 100vmax;
+    z-index: 3;
+}
+

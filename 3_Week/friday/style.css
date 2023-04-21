@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family-logo:'Nanum Pen Script', cursive ;
+    --font-family-heading:'Fira Sans',sans-serif  ;
+    --primary-color: #001219;
+    --secondary-color: #edf6f9;
+}
+
+
+.header {
+    height: 10vh;
+    width: 100vw;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: var(--font-family-logo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section {
+    display: flex;
+    height: auto;
+}
+#hero-image {
+    flex-grow: 1;
+}
+
+.buy-btn {
+    padding: 6px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    height: 40px;
+    width: 100px;
+    font-family: var(--font-family-heading);
+    position: relative;
+    bottom: 50px;
+    left: 50%;
+}
+
+#pizza-display {
+    display: flex;
+    justify-content: space-evenly;
+    width: auto;
+    height: 40vh;
+   
+}
+
+
+.pizza-item {
+    display: flex;
+    flex-flow: column wrap;
+    
+}
+
+.pizza-item > img {
+    height: 40%;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    height: 30vh;
+}
+input {
+    width: 25vw;
+    padding: 5px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+
+}
+
+.submit-btn {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 12px;
+    padding: 4px;
+    width: 60px;
+    border: 1px solid var(--secondary-color);
+}
+
+
+body {
+    font-family: var(--font-family-heading);
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Peter Piper</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Peter Piper Pizza</h1>
+    </header>
+    <main>
+        <section class="hero-section">
+            <img src="https://images.unsplash.com/photo-1571757392712-7c1052de7ce5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="" id="hero-image">
+        </section>
+        <a href="#pizza-display">
+            <button class="buy-btn">Buy pizza</button>
+        </a>
+        
+         <section id="pizza-display">
+            <section class="pizza-item" value="Pepporoni Pizza">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiPVDpzFSNdT_fEIxRTWOxqulNDrUFomcw_gX1CK-dng&usqp=CAU&ec=48665701" alt="Pepporoni Pizza" >
+                <p value="Pepporoni Pizza" >Pepporoni</p>
+            </section>
+            <section class="pizza-item" value="Hawaiian">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn2X-TAT5JWYED9ZZG3mldl3r86uE8vYN41ePtKT36nw&usqp=CAU&ec=48665701" alt="Hawaiian Pizza" value="Hawaiian">
+                <p value="Hawaiian">Hawaiian</p></section>
+            <section class="pizza-item" value="BBQ Pizza">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd5BXtD7JqAKqILe9r6u59AgATMhymz_OuttcKt-LwMw&usqp=CAU&ec=48665701" alt="Barbaque Pizza" value="BBQ Pizza">
+                <p value="BBQ Pizza">BBQ Chicken</p></section>
+         </section>
+         <form class="form-section">
+            <h2>Submit Your Recommendation</h2>
+            <label for="pizza-name">Pizza name</label>
+            <input type="text" id="pizza-name" placeholder="pizza-name">
+            <label for="pizza-picture">Pizza Picture</label>
+            <input type="text" id="pizza-picture" placeholder="pizza-picture">
+            <button type="submit" class="submit-btn">Submit</button> 
+        </form>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>

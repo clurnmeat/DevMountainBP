@@ -82,7 +82,6 @@ const sortByAge = (event) => {
   .catch(err => console.log(err))
 }
 
-
 const addNewChar = (e) => {
   e.preventDefault()
   
@@ -95,8 +94,13 @@ const addNewChar = (e) => {
     newAge: newAgeInput.value,
     newLikes: newLikesText.value,  
   }
-  axios.get(`${baseURL}`)
-
+  axios.post(`${baseURL}`, body)
+    .then(response => {
+      console.log(response);
+    })
+    .catch(error => {
+      console.log(error);
+    });
 }
 
 for(let i=0; i < charBtns.length; i++){

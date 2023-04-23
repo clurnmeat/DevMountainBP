@@ -1,8 +1,8 @@
-/* * {
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-} */
+}
 
 body {
   display: flexbox;
@@ -14,6 +14,7 @@ body {
   margin: 2rem auto;
   font-family: "Open Sans", sans-serif;
   justify-content: center;
+  background-image: './images/mymind-XUlsF9LYeVk-unsplash.jpg';
 }
 
 nav {

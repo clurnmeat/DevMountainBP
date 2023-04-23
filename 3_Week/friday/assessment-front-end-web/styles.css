@@ -1,16 +1,19 @@
-* {
+/* * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-}
+} */
 
 body {
+  display: flexbox;
+  flex-flow: column;
   background: #ddd;
   margin: 1rem;
   padding: 1rem;
   max-width: 500px;
   margin: 2rem auto;
   font-family: "Open Sans", sans-serif;
+  justify-content: center;
 }
 
 nav {
@@ -40,16 +43,35 @@ input {
 }
 
 img {
-	max-width: 300px;
+	max-width: 400px;
+	max-height: 600px;
 }
 
-.container {
-	display: flex;
-	flex-flow: column wrap;
+body > section {
+	display: flexbox;
+	flex-flow: row;
 }
 
 .back-btn {
-	width: 100vw;
-	display: flex;
-	flex-flow: row;
+	display: flexbox;
+	flex-flow: row-reverse;
+	justify-content: center;
+}
+
+
+.container{
+	display: flexbox;
+	max-width: 400px;
+	padding: 5px;
+	right: 5px;
+	bottom: 0px;
+}
+
+
+.container > button {
+	width: 100px;
+	height: 60px;
+	background-color: yellow;
+	border-radius: 5px;
+	border: none;
 }

@@ -51,4 +51,5 @@ img {
 .back-btn {
 	width: 100vw;
 	display: flex;
+	flex-flow: row;
 }

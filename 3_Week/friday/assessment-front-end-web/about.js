@@ -9,7 +9,6 @@ function handleSubmit(evt) {
 let count = 0;
 giveCompliment = () => {
 	let compliment = "";
-	const catpic = document.querySelector("#cat-pic");
 	const compliment_list = document.querySelectorAll(".compliments");
 	for (let i = 0; i < compliment_list.length; i++) {
 	  compliment = compliment_list[Math.floor(Math.random() * compliment_list.length)].textContent;

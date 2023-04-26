@@ -1,0 +1,74 @@
+Darth Vadar has a height of 202cm https://swapi.dev/api/people/4/
+Aldaraan population 1000 https://swapi.dev/api/planets/2/
+Millennium Falcon manufacturer is Corellian Engineering Corporation https://swapi.dev/api/starships/10
+C-3PO is a droid https://swapi.dev/api/species/2
+Obiwan was in these 6 movies: A New Hope, The empire strikes back, Return of the Jedi, The Phantom Menace, Attack of the clones, Revenge of the Sith
+
+https://swapi.dev/api/films/1/, https://swapi.dev/api/films/2/, https://swapi.dev/api/films/3/, https://swapi.dev/api/films/4/, https://swapi.dev/api/films/5/, https://swapi.dev/api/films/6/"
+
+
+
+To get info for Millennium Falcon https://swapi.dev/api/starships/?search=mil
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The url accepts Body text. It expects text for a new post in the body.
+
+
+It returns an array of objects inside a json file, the objects consist of text, id, date.
+
+
+https://practiceapi.devmountain.com/api/posts?id=555
+
+codes are: 200 for a success and 409 for an error of no text in body
+
+https://practiceapi.devmountain.com/api/posts: 
+
+Body{
+  "text": "Dionte Walker"
+}
+
+Put: https://practiceapi.devmountain.com/api/posts?id=1675
+
+Body{
+    "text": "Green"
+}
+
+
+https://practiceapi.devmountain.com/api/posts/filter?text=blue
+
+
+charset=uft-8
+
+no text in the body
+
+
+we get all posts because the query does not exist in the server.
+
+
+
+
+
+
+
+
+
+
+
+
+

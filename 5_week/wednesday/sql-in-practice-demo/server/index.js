@@ -13,7 +13,7 @@ app.use(cors())
 app.post('/seed', seed)
 
 // USER
-// app.get('/user', getUserInfo)
+app.get('/user', getUserInfo)
 // app.put('/user', updateUserInfo)
 
 // APPOINTMENTS

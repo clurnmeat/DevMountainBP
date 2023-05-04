@@ -1,24 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import Child from './Child.jsx'
+import { useState } from 'react';
+
+
+
 
 function App() {
+  const newArr = [] 
+  for(let i=0; i< 10;i++){
+    newArr[i] = i
+  }
+
+  const [input,setInput] = useState("")
+ 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hello World</h1>
+      <h3>User input: {input}</h3>
+      <input placeholder='Type something cool' onChange={(el) => setInput(el.target.value)}></input>
+      {newArr}
+      <Child userinput={input} />
     </div>
+    
   );
 }
 

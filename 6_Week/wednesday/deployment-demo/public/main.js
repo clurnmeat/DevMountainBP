@@ -1,5 +1,5 @@
 const btn = document.querySelector('button')
-const dogbtn = document.querySelector('.dog')
+const dogbtn = document.querySelector('#dog')
 
 
 const clickHandler = () => alert('The cat name is: Rascal')

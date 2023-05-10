@@ -1,0 +1,17 @@
+* {
+    font-family: sans-serif;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-right: 2px solid aqua;
+    border-bottom: 2px solid aqua;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+p {
+    width: 50%;
+}

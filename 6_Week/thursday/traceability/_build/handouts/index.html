@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>DevOps Lab | Devmountain Foundations</title>
+
+      <link
+        href="_static/pygments.css"
+        rel="stylesheet"
+        type="text/css"
+      />
+      <link href="_static/devmountain.css" rel="stylesheet" type="text/css" />
+          <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+          <link rel="stylesheet" type="text/css" href="_static/devmountain.css" />
+          <link rel="stylesheet" type="text/css" href="_static/plot_directive.css" />
+          <link rel="stylesheet" type="text/css" href="_static/graphviz.css" />
+
+      <script src="_static/pdfobject.min.js"></script>
+      
+  </head>
+  <body>
+      <div id="handouts-container">
+        <header id="page-header">
+            <p id="project-title">Devmountain Foundations</p>
+            <p id="page-title">DevOps Lab</p>
+              <p id="backlink">
+                <a href="/"> &laquo; Back to Homepage </a>
+              </p>
+        </header>
+
+        <nav id="page-toc"><ul>
+<li><a class="reference internal" href="#">DevOps Lab</a><ul>
+<li><a class="reference internal" href="#overview">Overview</a></li>
+<li><a class="reference internal" href="#step-1">Step 1</a></li>
+<li><a class="reference internal" href="#step-2">Step 2</a></li>
+<li><a class="reference internal" href="#step-3">Step 3</a></li>
+<li><a class="reference internal" href="#submit">Submit</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+
+        <main id="page-content">
+            <section class="section" id="devops-lab">
+<h1>DevOps Lab</h1>
+<section class="section" id="overview">
+<h2>Overview</h2>
+<p>In this lab you will install Rollbar and implement it into a node application.</p>
+</section>
+<section class="section" id="step-1">
+<h2>Step 1</h2>
+<ul class="simple">
+<li><p>Build a node application using express and deploy it to Heroku (or, open up a node application you already have deployed to Heroku)</p></li>
+<li><p>Link your Rollbar account to your repo</p></li>
+<li><p>Back in your code, import Rollbar and create a new instance of it using your <code class="docutils literal notranslate"><span class="pre">post_server_item</span></code> access token</p></li>
+<li><p>Add an endpoint and in the callback function, call a function that does not exist so you can test out Rollbar (hint: try using a try…catch block <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch" target="_blank">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try…catch</a>)</p></li>
+<li><p>Push your code, redeploy (if you don’t have automatic deployments on), and go to that endpoint to trigger your error</p></li>
+<li><p>Check your Rollbar dashboard, you should have an error being displayed</p></li>
+</ul>
+</section>
+<section class="section" id="step-2">
+<h2>Step 2</h2>
+<ul class="simple">
+<li><p>Expand your error handling by creating custom Rollbar errors</p></li>
+<li><p>Create at least one Rollbar critical error</p></li>
+<li><p>Create at least one Rollbar warning</p></li>
+</ul>
+</section>
+<section class="section" id="step-3">
+<h2>Step 3</h2>
+<ul class="simple">
+<li><p>Continue to build out your application by adding new features</p></li>
+<li><p>Make sure to include Rollbar error handling in your code (front-end or back-end)</p></li>
+<li><p>As you are testing your app locally, go check out your Rollbar dashboard to see if you have any errors</p></li>
+<li><p>Each time you have added a feature to your application, push your changes and redeploy</p></li>
+<li><p>Once deployed, go and test those features on the deployed site, checking out your Rollbar dashboard as yo go along</p></li>
+</ul>
+</section>
+<section class="section" id="submit">
+<h2>Submit</h2>
+<p>Don’t foget to push final changes to your repo.</p>
+</section>
+</section>
+
+        </main>
+
+        <footer id="page-footer">
+            <p>&copy; 2021 Devmountain</p>
+        </footer>
+      </div>
+
+      <script src="_static/main.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+  </body>
+</html>

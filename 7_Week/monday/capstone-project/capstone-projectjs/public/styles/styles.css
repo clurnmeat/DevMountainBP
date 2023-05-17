@@ -105,14 +105,10 @@ form{
     left: 500px;
 }
 
-div>iframe{
+iframe{
     position: relative;
     height: 501px;
     left: 1450px;
     width: 455px;
     bottom: 500px;
-}
-#map{
-    height: 0px;
-    width: 0px;
 }

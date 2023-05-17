@@ -1,7 +1,7 @@
 
 const questionBox = document.querySelector('#question')
 const textArea = document.getElementById('#question').textContent
-
+const map = document.getElementsByTagName('iframe')
 
 questionBox.addEventListener("click", (event) => {
     event.preventDefault()

@@ -1,5 +1,5 @@
 * {
-  position: flexbox;
+  position: relative;
   background-color: #3bf0e7;
   color: #0a4d68;
   height: fit-content;
@@ -70,16 +70,14 @@ form {
 #masonic-img,
 #masonic-family,
 #double-eagle {
-  zoom: 180px;
   position: relative;
   left: 250px;
   top: 150px;
   width: 500px;
   height: auto;
-  margin-top: -150px;
+  margin : 0px;
 }
 #templar-img {
-  right: 500px;
   height: auto;
   width: 410px;
 }
@@ -111,10 +109,10 @@ form {
 
 iframe {
   position: relative;
-  height: 500px;
+  height: 550px;
   left: 1450px;
   width: 455px;
-  bottom: 550px;
+  bottom: 760.5px;
 }
 
 #true-false{
@@ -126,10 +124,9 @@ iframe {
 .tf{
   display: flex;
   position: relative;
-  bottom: 1000px;
-  left: 1160px;
+  bottom: 1315px;
   margin-bottom: 20px;
-  
+  margin-inline: 300px;
 }
 .tf>button{
   border-style: groove;
@@ -140,13 +137,22 @@ iframe {
 body{
   height: 800px;
   width: fit-content;
+  margin: 0px;
+  overflow:hidden;
+  
 }
+
 #title{
-  position: relative;
   width: fit-content;
 }
 
 #title>div>h1{
+  position: relative;
   font-size: 40px;
-  
+  left: 200px;
+}
+
+#question-div{
+  margin-left: 400px;
+  padding-bottom: 210px;
 }

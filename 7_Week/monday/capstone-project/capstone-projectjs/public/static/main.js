@@ -1,12 +1,20 @@
 
-const questionBox = document.querySelector('#question')
-const textArea = document.getElementById('#question').textContent
+const questionBox = document.getElementById('submit')
+const question = document.getElementById('question').innerHTML
 const map = document.getElementsByTagName('iframe')
 
-questionBox.addEventListener("click", (event) => {
+questionBox.addEventListener( "click", ( event ) =>
+{
     event.preventDefault()
-    axios.get(`http://localhost:5500/public/index.html`).then(res => res.data).catch(err => console.log(err))
+    axios
+        .get( `http://localhost:5005/?question=${question}`, question )
+        .then( ( res ) =>
+        {   alert(res.data)
+        } )
+        .catch( err => console.log( err ) )
+
 })
+
 
 
 

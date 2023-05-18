@@ -1,114 +1,152 @@
 * {
-    position: flexbox;
-    background-color: #3bf0e7;
-    color: #0A4D68;
-
+  position: flexbox;
+  background-color: #3bf0e7;
+  color: #0a4d68;
+  height: fit-content;
 }
 
+#title {
+  margin: auto;
+  align-content: center;
+  max-width: fit-content;
+}
+
+.container {
+  display: contents;
+  background-color: white;
+}
+
+input {
+  background-color: white;
+}
+
+.questions {
+  position: flex;
+  margin-bottom: 100px;
+  position: relative;
+  left: 20px;
+  margin: 10px;
+  max-width: fit-content;
+}
+
+form > textarea {
+  background-color: white;
+  display: inline-flex;
+  position: relative;
+  width: 280px;
+  height: 80px;
+}
+form > button {
+  background-color: #0a4d68;
+  position: relative;
+  color: white;
+  border: 0px;
+}
+ul,
+li {
+  background-color: white;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+form {
+  background-color: white;
+}
+
+#question-div {
+  background-color: transparent;
+  opacity: 95%;
+  display: flexbox;
+  flex-wrap: wrap;
+  background-color: white;
+  padding-left: 50px;
+  padding-right: 50px;
+  max-height: 500px;
+  overflow: scroll;
+  align-content: center;
+  width: 880px;
+  margin-bottom: 400px;
+  margin-block: 50px;
+}
+#masonic-img,
+#masonic-family,
+#double-eagle {
+  zoom: 180px;
+  position: relative;
+  left: 250px;
+  top: 150px;
+  width: 500px;
+  height: auto;
+  margin-top: -150px;
+}
+#templar-img {
+  right: 500px;
+  height: auto;
+  width: 410px;
+}
+
+#q1,
+#q3 {
+  right: 150px;
+  margin-top: 150px;
+  bottom: 70px;
+}
+
+#q2,
+#q4 {
+  left: 500px;
+  bottom: 50px;
+}
+#q3 {
+  bottom: 25px;
+}
+#average-masonic {
+  height: auto;
+  width: 450px;
+}
+#double-eagle {
+  width: auto;
+  height: 300px;
+  left: 500px;
+}
+
+iframe {
+  position: relative;
+  height: 500px;
+  left: 1450px;
+  width: 455px;
+  bottom: 550px;
+}
+
+#true-false{
+    display: relative;
+    width: max-content;
+    height: max-content;
+}
+
+.tf{
+  display: flex;
+  position: relative;
+  bottom: 1000px;
+  left: 1160px;
+  margin-bottom: 20px;
+  
+}
+.tf>button{
+  border-style: groove;
+  border-radius: 25%;
+  
+}
+
+body{
+  height: 800px;
+  width: fit-content;
+}
 #title{
-    margin: auto;
-    align-content: center;
-    max-width: fit-content;
+  position: relative;
+  width: fit-content;
 }
 
-.container{
-    display: contents;
-    background-color: white;
-}
-
-input{
-    background-color: white;
-}
-
-.questions{
-    position: flex;
-    margin-bottom: 100px;
-    position: relative;
-    left: 20px;
-    margin: 10px;
-    max-width: fit-content;
-}
-
-form>textarea{
-    background-color: white;
-    display: inline-flex;
-    position: relative;
-    width: 280px;
-    height: 80px;
-}
-form>button{
-    background-color: #0A4D68;
-    position: relative;
-    color: white;
-    border: 0px;
-}
-ul, li{
-    background-color: white;
-    padding-top: 0px;
-    margin-top: 0px;
-    
-}
-form{
-    background-color: white;
-}
-
-#question-div{
-    background-color: transparent;
-    opacity: 95%;
-    display: flexbox;
-    flex-wrap: wrap;
-    background-color: white;
-    padding-left: 50px;
-    padding-right: 50px;
-    max-height: 500px;
-    overflow: scroll;
-    align-content: center;
-    width: 880px;
-    margin: auto;
-}
-#masonic-img, #masonic-family, #double-eagle{
-    zoom: 180px;
-    position: relative;
-    left: 250px;
-    top: 150px;
-    width: 500px;
-    height: auto;
-    margin-top: -150px;
-    
-}
-#templar-img{
-    right: 500px;
-    height: auto;
-    width: 410px;
-}
-
-#q1, #q3 {
-    right: 150px;
-    margin-top: 150px;
-    bottom: 70px;
-}
-
-#q2, #q4{ 
-    left: 500px;
-    bottom: 50px;
-}
-#q3{
-    bottom: 25px
-}
-#average-masonic{
-    height: auto;
-    width: 450px;
-}
-#double-eagle{
-    width: auto;
-    height: 300px;
-    left: 500px;
-}
-
-iframe{
-    position: relative;
-    height: 501px;
-    left: 1450px;
-    width: 455px;
-    bottom: 500px;
+#title>div>h1{
+  font-size: 40px;
+  
 }

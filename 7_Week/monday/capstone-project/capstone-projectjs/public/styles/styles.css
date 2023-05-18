@@ -4,30 +4,18 @@
   color: #0a4d68;
   height: fit-content;
 }
-
-#title {
-  margin: auto;
-  align-content: center;
-  max-width: fit-content;
-}
-
-.container {
-  display: contents;
+a{
   background-color: white;
+}
+p{
+  background-color: white;
+ 
 }
 
 input {
   background-color: white;
 }
 
-.questions {
-  position: flex;
-  margin-bottom: 100px;
-  position: relative;
-  left: 20px;
-  margin: 10px;
-  max-width: fit-content;
-}
 
 form > textarea {
   background-color: white;
@@ -42,6 +30,14 @@ form > button {
   color: white;
   border: 0px;
 }
+li>p{
+  max-width: 880px;
+  inline-size: fit-content;
+  margin-left: 0px;
+  overflow-wrap: break-word;
+  max-lines: 80px;
+}
+
 ul,
 li {
   background-color: white;
@@ -51,95 +47,155 @@ li {
 form {
   background-color: white;
 }
-
-#question-div {
-  background-color: transparent;
-  opacity: 95%;
-  display: flexbox;
-  flex-wrap: wrap;
-  background-color: white;
-  padding-left: 50px;
-  padding-right: 50px;
-  max-height: 500px;
-  overflow: scroll;
-  align-content: center;
-  width: 880px;
-  margin-bottom: 400px;
-  margin-block: 50px;
-}
-#masonic-img,
-#masonic-family,
-#double-eagle {
-  position: relative;
-  left: 250px;
-  top: 150px;
-  width: 500px;
-  height: auto;
-  margin : 0px;
-}
-#templar-img {
-  height: auto;
-  width: 410px;
-}
-
-#q1,
-#q3 {
-  right: 150px;
-  margin-top: 150px;
-  bottom: 70px;
-}
-
-#q2,
-#q4 {
-  left: 500px;
-  bottom: 50px;
-}
-#q3 {
-  bottom: 25px;
-}
-#average-masonic {
-  height: auto;
-  width: 450px;
-}
-#double-eagle {
-  width: auto;
-  height: 300px;
-  left: 500px;
-}
-
 iframe {
   position: relative;
-  height: 550px;
+  height: 840px;
   left: 1450px;
   width: 455px;
-  bottom: 760.5px;
+  bottom: 840px;
+  border-radius: 80px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 10px;
+}
+body{
+  height: fit-content;
+  width: fit-content;
+  overflow:hidden;
+  
 }
 
-#true-false{
-    display: relative;
-    width: max-content;
-    height: max-content;
+.container {
+  display: contents;
+  background-color: white;
 }
-
 .tf{
   display: flex;
   position: relative;
-  bottom: 1315px;
+  bottom: 1060px;
   margin-bottom: 20px;
   margin-inline: 300px;
 }
 .tf>button{
   border-style: groove;
   border-radius: 25%;
-  
+}
+.questions {
+  position: relative;
+  margin-bottom: 100px;
+  position: relative;
+  left: 20px;
+  margin: 10px;
+  max-width: fit-content;
+  bottom: 120px;
 }
 
-body{
-  height: 800px;
-  width: fit-content;
-  margin: 0px;
-  overflow:hidden;
+
+#title {
+  margin: auto;
+  align-content: center;
+  max-width: fit-content;
+}
+
+#question-div {
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  background-color: white;
+  margin-right: 50px;
+  padding-right: 60px;
+  max-height: 840px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  align-content: center;
   
+  
+}
+#masonic-img, #masonic-family, #double-eagle  {
+  zoom: 20%;
+  position: relative;
+  left: 350px;
+  width: 500px;
+  height: auto;
+  margin : 0px;
+  border-radius: 20px;
+  margin-bottom: 60px;
+}
+
+
+#q1,
+#q3 {
+  max-inline-size: 280px;
+  right: 150px;
+  bottom: 380px;
+  padding-bottom: 50px;
+}
+
+#q2,#q4 {
+  max-inline-size: 380px;
+  left: 500px;
+  bottom: 350px;
+  margin-bottom: 10px;
+}
+#q5{
+  bottom: 300px;
+  margin-bottom: 0px;
+}
+
+#templar-img{
+  height: auto;
+  width: 410px;
+  top: 50px;
+  border-radius: 50px;
+  margin-bottom: 80px;
+  margin-right: 0px;
+}
+
+
+#average-masonic {
+  border-radius: 30px;
+  height: auto;
+  width: 450px;
+  margin-bottom: 280px;
+}
+
+#double-eagle {
+  margin-top: 30px;
+  width: auto;
+  height: 300px;
+  left: 500px;
+}
+#masonic-img{
+  top: 560px;
+  width: 400px;
+  border-bottom-left-radius: 400px;
+  border-bottom-right-radius: 400px;
+  border-top-left-radius: 75px;
+  border-top-right-radius: 150px;
+  border-width: 0px;
+  background-color: transparent;
+  margin-left: 160px;
+
+}
+#masonic-family{
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  top: 50px;
+}
+
+
+
+#true-false{
+    display: relative;
+    width: max-content;
+    height: max-content;
+    bottom: 600px;
+}
+
+#q-list{
+  position: relative;
+  left: 380px;
 }
 
 #title{
@@ -150,9 +206,25 @@ body{
   position: relative;
   font-size: 40px;
   left: 200px;
+  border: 10px;
 }
 
 #question-div{
   margin-left: 400px;
-  padding-bottom: 210px;
+  padding-bottom: 0px;
+  opacity: 96%;
+  border-radius: 80px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 10px;
+  scroll-margin-top: 10px;
+  width: 980px;
+}
+
+
+#charity{
+  width: fit-content;
+  position: relative;
+  bottom: 1400px;
+  left: 20px;
+  
 }

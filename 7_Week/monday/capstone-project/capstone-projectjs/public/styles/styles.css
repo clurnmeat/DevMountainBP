@@ -123,24 +123,29 @@ body{
 }
 
 
-#q1,
-#q3 {
+#q1,#q3 {
+  position: relative;
   max-inline-size: 280px;
-  right: 150px;
   bottom: 380px;
-  padding-bottom: 50px;
+  
 }
-
-#q2,#q4 {
+#q2{
   max-inline-size: 380px;
   left: 500px;
-  bottom: 350px;
+  bottom: 380px;
   margin-bottom: 10px;
+  
+}
+#q4 {
+  max-inline-size: 380px;
+  left: 500px;
+  bottom: 680px;
 }
 #q5{
   bottom: 300px;
   margin-bottom: 0px;
 }
+
 
 #templar-img{
   height: auto;
@@ -166,7 +171,7 @@ body{
   left: 500px;
 }
 #masonic-img{
-  top: 560px;
+  top: 450px;
   width: 400px;
   border-bottom-left-radius: 400px;
   border-bottom-right-radius: 400px;
@@ -182,6 +187,7 @@ body{
   margin-top: 50px;
   margin-bottom: 150px;
   top: 50px;
+  width: 400px;
 }
 
 
@@ -195,7 +201,7 @@ body{
 
 #q-list{
   position: relative;
-  left: 380px;
+  left: 10px;
 }
 
 #title{

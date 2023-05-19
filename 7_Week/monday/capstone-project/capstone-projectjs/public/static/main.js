@@ -9,7 +9,7 @@ questionBox.addEventListener( "click", ( event ) =>
     axios
         .get( `http://localhost:5005/?question=${question}`, question )
         .then( ( res ) =>
-        {   alert(res.data)
+        {   alert(res.innerHTML)
         } )
         .catch( err => console.log( err ) )
 

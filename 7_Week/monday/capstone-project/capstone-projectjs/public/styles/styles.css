@@ -140,10 +140,12 @@ body{
   max-inline-size: 380px;
   left: 500px;
   bottom: 680px;
+  margin-bottom: 0px;
 }
 #q5{
-  bottom: 300px;
+  bottom: 450px;
   margin-bottom: 0px;
+  
 }
 
 
@@ -165,10 +167,10 @@ body{
 }
 
 #double-eagle {
-  margin-top: 30px;
   width: auto;
   height: 300px;
-  left: 500px;
+  left: 650px;
+  bottom: 200px;
 }
 #masonic-img{
   top: 450px;
@@ -188,6 +190,8 @@ body{
   margin-bottom: 150px;
   top: 50px;
   width: 400px;
+  margin-left: 130px;
+  margin-right: 0px;
 }
 
 

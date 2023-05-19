@@ -12,12 +12,12 @@ app.use(express.static(path.join(__dirname, '../public')))
 
 app.get( '/', ( res ) =>
 {
-    res.status(200).send('clear-chief')
+    res.status(200)
 })
 
-app.put( `/:question`, ( req, res ) =>{
+app.get( `/:question`, ( req, res ) =>{
     
-    let data = req.body.value
+    let data = req.params.question
     
     return res.status(200).send(data)
 } )

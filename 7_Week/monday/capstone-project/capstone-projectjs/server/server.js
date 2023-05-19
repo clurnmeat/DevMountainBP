@@ -12,14 +12,12 @@ app.use(express.static(path.join(__dirname, '../public')))
 
 app.get( '/', ( res ) =>
 {
-    res.status(200)
+    return res.status(200)
 })
 
-app.get( `/:question`, ( req, res ) =>{
+app.put( `/question`, ( req, res ) =>{
     
-    let data = req.params.question
-    
-    return res.status(200).send(data)
+    return res.status(200).send(req.params.question)
 } )
     
 

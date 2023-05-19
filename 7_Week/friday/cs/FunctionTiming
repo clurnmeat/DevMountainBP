@@ -1,0 +1,32 @@
+FunctionTiming
+        Extra large, Large, Meduim, Small, Tiny
+insert: 763.621381 ms, 6.114661 ms, 130.464 μs, insert 108.52 μs, 64.452 μs
+append: 2.281939 ms, 1.91088 ms, 144.001 μs,  append 271.801 μs, 165.211 μs
+
+Observation: 
+ The runtime is linear until minor diviation with insertion and appending around the medium array, then trends go back to normal.
+ 
+ Possible Hypothesis:
+     The insert function takes longer due to method being used.
+ 
+ Examination of Observation:
+     What I can examine is that prior to mediumArray, the doublerINsert function runs quicker than the runtime for append. after that, the results for the mediumArray show a small variation in trend, meaning that the medium append to the end is actually slower than inserting directly into the front of the array. after that the the trend continues until the operations are done with the set of arrays provided at this time.
+
+Hypothesis:
+     The insert function takes longer for javascript to run due to the fact that it has to unshift the entire array with the num vs with append, it is merely going to the end with the push function. 
+    
+    
+Fact:
+    Unshift:    
+        The unshift() method inserts the given values to the beginning of an array-like object.
+
+        Array.prototype.push() has similar behavior to unshift(), but applied to the end of an array.
+    Push:
+        The push() method is a mutating method. It changes the length and the content of this. In case you want the value of this to be the same, but return a new array with elements appended to the end, you can use arr.concat([element0, element1, /* ... ,*/ elementN]) instead. Notice that the elements are wrapped in an extra array — otherwise, if the element is an array itself, it would be spread instead of pushed as a single element due to the behavior of concat().
+
+
+Outcome:
+ Hypothesis, was reasonable, overall evaluation speculation is close, but not quite correct. The array is being mutated by arr.concat([elment0]...), thus the Push array is faster due to the elemnt index not needing to shift by 1 everytime it is being Inserted
+
+
+Notes: evaluate give it points, add them together, remove the constant (anything without an n), look at worse case scenario (ignore in case left in.) 

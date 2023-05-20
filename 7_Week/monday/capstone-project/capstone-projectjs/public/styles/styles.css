@@ -1,6 +1,6 @@
 * {
   position: relative;
-  background-color: #3bf0e7;
+  background-color: transparent;
   color: #0a4d68;
   height: fit-content;
 }
@@ -61,6 +61,7 @@ body{
   height: fit-content;
   width: fit-content;
   overflow:hidden;
+  background-image: url('https://media.istockphoto.com/id/1133497899/photo/old-dirty-paper-texture.jpg?s=612x612&w=0&k=20&c=0BnHDfayvJAmR6CGK2JUrgOh2R_C1RU7XZqUVyloHNc=');
   
 }
 
@@ -71,7 +72,6 @@ body{
 .tf{
   display: flex;
   position: relative;
-  bottom: 1060px;
   margin-bottom: 20px;
   margin-inline: 300px;
 }
@@ -88,7 +88,11 @@ body{
   max-width: fit-content;
   bottom: 120px;
 }
-
+.tf{
+  border-radius: 20%;
+  border-color: black;
+  background-color: #3bf0e7;
+}
 
 #title {
   margin: auto;
@@ -123,7 +127,14 @@ body{
 }
 
 
-#q1,#q3 {
+#q1 {
+  position: relative;
+  max-inline-size: 280px ;
+  bottom: 280px;
+  margin-bottom: 50px;
+}
+
+#q3 {
   position: relative;
   max-inline-size: 280px;
   bottom: 380px;
@@ -142,6 +153,7 @@ body{
   bottom: 680px;
   margin-bottom: 0px;
 }
+
 #q5{
   bottom: 450px;
   margin-bottom: 0px;
@@ -173,7 +185,7 @@ body{
   bottom: 200px;
 }
 #masonic-img{
-  top: 450px;
+  top: 400px;
   width: 400px;
   border-bottom-left-radius: 400px;
   border-bottom-right-radius: 400px;
@@ -198,25 +210,47 @@ body{
 
 #true-false{
     display: relative;
-    width: max-content;
-    height: max-content;
-    bottom: 600px;
+    width: 400px;
+    height: fit-content;
+    bottom: 1675px;
+    border: 0px;
+    inline-size: 400px;
+    left: 2px;
+    margin-bottom: 0px;
+    
+    
 }
+#true-false>ul{
+  background-color: white;
+  width: 350px;
+  border-radius: 15px;
+}
+#true-false>ul>p{
+  background-color: white;
+  top: 50px;
+  width: 200px;
+
+}
+#true-false>ul>button{
+  background-color: #e0d1a8;
+  bottom: 30px;
+}
+
 
 #q-list{
   position: relative;
   left: 10px;
 }
 
-#title{
-  width: fit-content;
-}
 
 #title>div>h1{
   position: relative;
   font-size: 40px;
   left: 200px;
   border: 10px;
+  background-color: white;
+  align-content: center;
+  border-radius: 5px;
 }
 
 #question-div{
@@ -234,7 +268,36 @@ body{
 #charity{
   width: fit-content;
   position: relative;
-  bottom: 1400px;
+  bottom: 1600px;
   left: 20px;
   
+}
+
+#charities>ul{
+  display: inline-block;
+  border-radius: 25px;
+  width: 290px;
+  position: relative;
+  height: 230px;
+  bottom: 20px;
+  margin: fit-content;
+}
+#charities>ul>li{
+  
+  width: fit-content;
+  overflow: scroll;
+
+  
+}
+
+#charity-of-the-month{
+  width: 200px;
+  height: auto;
+}
+#cherity-chosen{
+  width: 200px;
+  height: auto;
+}
+#charities>h3{
+  left: 30px;
 }

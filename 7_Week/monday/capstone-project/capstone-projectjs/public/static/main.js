@@ -20,7 +20,6 @@ questionBox.addEventListener("click", async (event) => {
 for (let i = 0; i < tf.length; i++) {
   tf[i].addEventListener('click', async (event) => {
       const selectedOption = event.target.value;
-      console.log(event.target.value)
       if ( selectedOption== 'false' )
       {
         alert('Try Again!')
@@ -28,8 +27,6 @@ for (let i = 0; i < tf.length; i++) {
       {
           alert('Correct!')
     }
-    
-    
   });
 }
 

@@ -12,12 +12,14 @@ app.use(cors())
 
 const {addTodb, getHomePage} = require('../public/static/controller/userController')
 
+const {changeMap} = require('../public/static/controller/mapsController')
 
 // routes
 app.get( '/', getHomePage) 
 
 app.put( '/:question', addTodb)
 
+app.get('/maps/:zipcode',changeMap )
 
 
 

@@ -60,7 +60,7 @@ iframe {
 body{
   height: fit-content;
   width: fit-content;
-  overflow:hidden;
+  /* overflow:hidden; */
   background-image: url('https://media.istockphoto.com/id/1133497899/photo/old-dirty-paper-texture.jpg?s=612x612&w=0&k=20&c=0BnHDfayvJAmR6CGK2JUrgOh2R_C1RU7XZqUVyloHNc=');
   
 }
@@ -300,4 +300,26 @@ body{
 }
 #charities>h3{
   left: 30px;
+}
+#zipcode{
+  position: relative;
+  bottom: 2500px;
+  left: 1190px;
+  width: 200px;
+}
+#zipcode-label {
+  bottom: 2530px;
+  left: 1545px;
+  background-color: white;
+  width: 340px;
+  height: auto;
+  border-radius: 2px;
+  max-inline-size: 100px;
+
+}
+#take-me-there{
+  position: relative;
+  bottom: 2500px;
+  left: 1200px;
+  background-color: white;
 }

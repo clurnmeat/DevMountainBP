@@ -19,7 +19,7 @@ app.get( '/', getHomePage)
 
 app.put( '/:question', addTodb)
 
-app.get('/maps/:zipcode',changeMap )
+app.post('/maps/:zipcode',changeMap )
 
 
 

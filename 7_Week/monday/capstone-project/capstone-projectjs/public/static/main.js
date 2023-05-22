@@ -1,7 +1,7 @@
 
 const questionBox = document.querySelector('#submit');
 const tf = document.getElementsByClassName('tf');
-const map = document.getElementsByTagName('iframe');
+const map = document.getElementById('iframe');
 const takeMeThereBtn = document.getElementById( 'take-me-there' )
 
 
@@ -35,8 +35,9 @@ for (let i = 0; i < tf.length; i++) {
 takeMeThereBtn.addEventListener('click', async (event) => {
   event.preventDefault();
 
+  
   const zipcodeInput = document.getElementById('zipcode');
-  const zipcodeValue = zipcodeInput;
+  const zipcodeValue = zipcodeInput.value; // Fixed: need to get value of input
 
   if (!zipcodeValue) {
     alert('Please enter a valid zipcode.');
@@ -44,16 +45,13 @@ takeMeThereBtn.addEventListener('click', async (event) => {
   }
 
   try {
-    const response = await axios.post(`http://localhost:5005/maps/zipcode`, { zipcode: zipcodeValue });
-    alert(response.data);
+    const res = await axios.post( `http://localhost:5005/maps/zipcode`, { zipcode: zipcodeValue } );
+    if ( res )
+    {
+      alert(res.data-)
+    } 
   } catch (error) {
     console.error(error);
     alert('There was an error processing your request. Please try again later.');
   }
-
 });
-
-
-
-
-

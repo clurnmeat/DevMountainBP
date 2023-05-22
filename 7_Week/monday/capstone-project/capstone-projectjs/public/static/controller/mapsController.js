@@ -1,6 +1,7 @@
 // Import the required modules
 require( 'module' );
-const {Builder, By, Key, until} = require('selenium-webdriver')
+const {Builder, By, Key, until} = require('selenium-webdriver');
+const { elementLocated } = require( 'selenium-webdriver/lib/until' );
 
 // Export a function called 'changeMap'
 module.exports = {
@@ -21,16 +22,12 @@ module.exports = {
 
 
       // Wait for another element to load before clicking on it
-      let element = await driver.findElement( By.className( 'g88MCb S9kvJb ' ) );
+      let element = await driver.findElement( By.className( ' g88MCb S9kvJb ' ) );
       await element.click()
-      // let element = await driver.findElement( By.css( 'input' ) ).sendKeys(Key.ENTER);
-      await driver.wait(until.elementLocated(By.className('oucrtf PpaGLb')))
-      // await driver.wait(until.elementLocated(By.className('qS6JSb fontTitleSmall XbJon')))
-      
       
       
       // Send a response with the address
-      res.status(200).send('complete');
+      res.status(200).send('check your phone');
     } catch (error) {
       // Handle errors by sending an error response
       console.error(error);

@@ -3,6 +3,7 @@
   background-color: transparent;
   color: #0a4d68;
   height: fit-content;
+  resize: none;
 }
 a{
   background-color: white;
@@ -47,16 +48,7 @@ li {
 form {
   background-color: white;
 }
-iframe {
-  position: relative;
-  height: 840px;
-  left: 1450px;
-  width: 455px;
-  bottom: 840px;
-  border-radius: 80px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 10px;
-}
+
 body{
   height: fit-content;
   width: fit-content;
@@ -160,7 +152,16 @@ body{
   
 }
 
-
+#iframe {
+  position: relative;
+  height: 840px;
+  left: 1450px;
+  width: 455px;
+  bottom: 840px;
+  border-radius: 80px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 10px;
+}
 #templar-img{
   height: auto;
   width: 410px;

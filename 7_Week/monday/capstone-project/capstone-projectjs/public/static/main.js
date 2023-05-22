@@ -48,7 +48,7 @@ takeMeThereBtn.addEventListener('click', async (event) => {
     const res = await axios.post( `http://localhost:5005/maps/zipcode`, { zipcode: zipcodeValue } );
     if ( res )
     {
-      alert(res.data-)
+      alert(res.data)
     } 
   } catch (error) {
     console.error(error);

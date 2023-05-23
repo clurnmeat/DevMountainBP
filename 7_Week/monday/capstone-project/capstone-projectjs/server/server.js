@@ -12,7 +12,8 @@ app.use(cors())
 
 const {addTodb, getHomePage} = require('../public/static/controller/userController')
 
-const {changeMap} = require('../public/static/controller/mapsController')
+const {changeMap} = require('../public/static/controller/mapsController');
+const EventEmitter = require( 'events' );
 
 // routes
 app.get( '/', getHomePage) 
@@ -28,5 +29,5 @@ app.post('/maps/:zipcode',changeMap )
 
 
 
-
+EventEmitter.setMaxListeners(15)
 app.listen(5005, () => console.log("Jaminin on 5005"))

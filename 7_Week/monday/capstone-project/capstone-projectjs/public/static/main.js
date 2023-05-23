@@ -13,7 +13,8 @@ questionBox.addEventListener("click", async (event) => {
       const res = await axios.put(`http://localhost:5005/${question}`, question);
       alert(res.data);
     } catch (err) {
-      console.log(err);
+      console.log( err );
+      alert('Please enter a valid message to ask.')
     }
   }
 });
@@ -33,22 +34,22 @@ for (let i = 0; i < tf.length; i++) {
 }
 
 takeMeThereBtn.addEventListener('click', async (event) => {
-  event.preventDefault();
 
   
   const zipcodeInput = document.getElementById('zipcode');
-  const zipcodeValue = zipcodeInput.value; // Fixed: need to get value of input
+  const zipcode = zipcodeInput.value; 
 
-  if (!zipcodeValue) {
+  if (!zipcode) {
     alert('Please enter a valid zipcode.');
     return;
   }
 
   try {
-    const res = await axios.post( `http://localhost:5005/maps/zipcode`, { zipcode: zipcodeValue } );
+    const res = await axios.post( `http://localhost:5005/maps/${ zipcode }`, zipcode );
     if ( res )
     {
-      alert(res.data)
+      alert( res.data )
+      return;
     } 
   } catch (error) {
     console.error(error);

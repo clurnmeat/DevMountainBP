@@ -53,6 +53,6 @@ takeMeThereBtn.addEventListener('click', async (event) => {
     } 
   } catch (error) {
     console.error(error);
-    alert('There was an error processing your request. Please try again later.');
+    alert( ` There is no lodge at this location, please try again near a Major city or enter a city instead.(less anonomous)` );
   }
 });

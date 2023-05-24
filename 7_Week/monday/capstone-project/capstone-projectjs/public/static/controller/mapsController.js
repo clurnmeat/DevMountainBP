@@ -15,18 +15,19 @@ module.exports = {
     try {
 
       // Create a new WebDriver instance using the specified browser
-      driver = await new Builder().forBrowser('firefox').setFirefoxOptions(new firefox.Options().windowSize(screen)).build();
+      driver = await new Builder().forBrowser('firefox').setFirefoxOptions(new firefox.Options().headless().windowSize(screen)).build();
       
       // Load Google Maps and search for a query
       await driver.get('http://google.com/maps');
-      await driver.findElement( By.id( 'searchboxinput' ) ).sendKeys( `${req.params.zipcode} masonic temple near me`, Key.ENTER );
-      await driver.wait(until.elementLocated(By.className('hfpxzc')), 60000)
+      await driver.findElement( By.id( 'searchboxinput' ) ).sendKeys( ` masonic lodge near ${req.params.zipcode}`, Key.ENTER );
+      await driver.wait(until.elementLocated(By.className('hfpxzc')), 6000)
       let btn = await driver.findElement(By.className('hfpxzc'))
-      let aria_label = await btn.getAttribute("aria-label")
+      const aria_label = await btn.getAttribute( "aria-label" )
+      console.log(aria_label)
     
       
       // Wait for an element to load before interacting with it
-      await driver.wait(until.elementLocated(By.className('hfpxzc ')), 5000);
+      await driver.wait(until.elementLocated(By.className('hfpxzc ')), 15000);
 
 
       // Wait for another element to load before clicking on it
@@ -34,11 +35,10 @@ module.exports = {
       await element.click()
       
       
-      await driver.wait( until.elementLocated( By.className('DVeyrd  ')), 60000 )
-      let phoneBtn = await driver.findElement(By.className('DVeyrd  '))
-     
+      await driver.wait( until.elementLocated( By.className( 'DVeyrd  ' ) ), 6000 )
+      let phoneBtn =  driver.findElement( By.className( 'DVeyrd  ' ) ); 
       await phoneBtn.click()
-
+      
    
       
       // Send a response with the address

@@ -6,7 +6,7 @@ module.exports = {
     {
         let data = req.params.question
         questionDb.push({data})
-        res.status( 200 ).send( `Question added` )
+        res.status( 200 ).send( `Your question of "${data}" has been sent to our offices.\n\nWe will reply to as many as possible by updating this site.` )
         return
     
     },

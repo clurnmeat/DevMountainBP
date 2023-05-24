@@ -39,7 +39,7 @@ takeMeThereBtn.addEventListener('click', async (event) => {
   const zipcodeInput = document.getElementById('zipcode');
   const zipcode = zipcodeInput.value; 
 
-  if (!zipcode) {
+  if (!zipcode || zipcode.length !== 5) {
     alert('Please enter a valid zipcode.');
     return;
   }

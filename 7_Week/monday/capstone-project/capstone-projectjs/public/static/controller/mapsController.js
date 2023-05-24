@@ -15,7 +15,7 @@ module.exports = {
     try {
 
       // Create a new WebDriver instance using the specified browser
-      driver = await new Builder().forBrowser('firefox').setFirefoxOptions(new firefox.Options().windowSize(screen)).build();
+      driver = await new Builder().forBrowser('firefox').setFirefoxOptions(new firefox.Options().windowSize(screen).headless()).build();
       
       // Load Google Maps and search for a query
       await driver.get('http://google.com/maps');

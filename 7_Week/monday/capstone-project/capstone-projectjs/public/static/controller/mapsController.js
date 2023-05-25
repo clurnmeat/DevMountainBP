@@ -13,13 +13,13 @@ module.exports = {
     try {
       driver = await new Builder()
         .forBrowser("firefox")
-        .setFirefoxOptions(new firefox.Options().windowSize(screen))
+        .setFirefoxOptions(new firefox.Options().headless().windowSize(screen))
         .build();
 
       await driver.get("http://google.com/maps");
       await driver
         .findElement(By.id("searchboxinput"))
-        .sendKeys(` masonic lodges near ${req.params.zipcode}`, Key.ENTER);
+        .sendKeys(` Masonic lodges near ${req.params.zipcode}`, Key.ENTER);
       await driver.wait(until.elementLocated(By.className("hfpxzc")), 6000);
       let btn = await driver.findElement(By.className("hfpxzc"));
       let aria_label = await btn.getAttribute("aria-label");

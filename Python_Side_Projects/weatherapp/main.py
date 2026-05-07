@@ -2,7 +2,8 @@ import tkinter as tk
 from urllib.parse import urlencode
 import requests
 from PIL import Image, ImageTk
-
+import os
+from dotenv import *
 # Constants
 
 

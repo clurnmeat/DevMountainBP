@@ -1,2 +1,3 @@
-5_week/tuesday/labs/data-modeling
-6_Week/wednesday/labs/deployment
+GEOLOCATOR = "http://api.openweathermap.org/geo/1.0/direct"
+API = "https://api.openweathermap.org/data/2.5/weather"
+APIKEY = "eb386d51eb16c1f5ca4e882a58bee4ca"

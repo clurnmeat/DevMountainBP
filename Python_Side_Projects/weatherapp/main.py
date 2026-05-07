@@ -4,9 +4,7 @@ import requests
 from PIL import Image, ImageTk
 
 # Constants
-GEOLOCATOR = "http://api.openweathermap.org/geo/1.0/direct"
-API = "https://api.openweathermap.org/data/2.5/weather"
-APIKEY = "eb386d51eb16c1f5ca4e882a58bee4ca"
+
 
 # Function to retrieve weather information
 def get_weather_info(lat, lon):
